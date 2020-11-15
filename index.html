@@ -64,6 +64,187 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-HTML 第一次" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/15/HTML%20%E7%AC%AC%E4%B8%80%E6%AC%A1/" class="article-date">
+  <time datetime="2020-11-15T14:58:49.957Z" itemprop="datePublished">2020-11-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>tips:</strong></p>
+<p><strong> 加粗字体  </strong>（点击字体处查看代码）</p>
+<p><strong>1.  </strong>Web标准构成：</p>
+<p>​      结构（HTML），表现（CSS），行为（JS）</p>
+<p><strong>2.  HTML：</strong>超文本标签语言</p>
+<p>HTML语法结构：</p>
+<html>    //根标签
+
+<pre><code>       &lt;head&gt;  //头标签
+           &lt;title&gt;此处为网页名称&lt;/title&gt;  //标题标签，让页面有自己的标题
+       &lt;/head&gt;</code></pre>
+<p>​                <body> </p>
+<p>​                                   //主体标签，网页的主体部分，用于存放<html>                  代码</p>
+<p>​                </body></p>
+</html>
+
+<p>带&lt;&gt;的，叫做标签。</p>
+<p>实际操作：</p>
+<html>
+
+<pre><code>     &lt;head&gt;
+                 &lt;title&gt;我的第一个网站&lt;/title&gt;
+     &lt;/head&gt;</code></pre>
+<p>​         <body><br>​                   This is my frist try to HTML.<br>​                   我的第一次HTML尝试。<br>​         </body></p>
+</html>
+
+<p>将此代码复制到文本文档中，并将后缀改成html文件，选择打开方式为Google，打开后会有小惊喜。</p>
+<p>（至于换行，我还没有学习到，带我进一步研究）</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/15/HTML%20%E7%AC%AC%E4%B8%80%E6%AC%A1/" data-id="ckhja7ypr00004sui59n199mq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/14/%E6%80%BB%E7%BB%93/" class="article-date">
+  <time datetime="2020-11-14T10:26:20.212Z" itemprop="datePublished">2020-11-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="TCP-IP"><a href="#TCP-IP" class="headerlink" title="TCP/IP"></a>TCP/IP</h2><p>本次总结就只总结这周学的一些网络协议。</p>
+<p>大体的框架从软件到硬件分为七个部分：</p>
+<p>应用层，表示层，会话层，传输层，网络层，数据链路层，物理层。</p>
+<p>其中传输层负责完成数据的传送，前三层是面向用户，物理层顾名思义，它的任务就是解决多个数据终端之间能够连接在一起，比如中继器和集线器。</p>
+<p>数据链路层则是让两个终端结点能够不出错的完成传输数据，为网络层提供服务，使用的设备为网桥。网桥在网络互联中优则会数据接收，地址过滤和数据的转发的作用，实现多个网络系统间数据的交换。</p>
+<p>网络层互连的设备为路由器。让网络层互联是为了解决一些问题（路由选择，拥塞控制，差错处理，分段技术，这些问题还没有完全看懂）。如果网络协议相同，则互连解决的最重要的问题就是路由选择。如果网络协议不同，则需要使用多协议路由器。</p>
+<h2 id="TCP-IP-1"><a href="#TCP-IP-1" class="headerlink" title="TCP/IP"></a>TCP/IP</h2><p>接下来说说比较重要的TCP/IP协议。它的存在就像英语一样，你可以说自己国家的语言，但是到了国际大会上，大家都说英语，你不能听不懂，也不能不会说。它指定一些通用的东西让所有计算机都能看懂，并且交流。TCP/IP是一个协议族的统称，里面包括好多其他协议，计算机有了这些就能学会它们的“英语”，并能和其他计算机交流。</p>
+<p><img src="C:\Users\zhang\AppData\Roaming\Typora\typora-user-images\image-20201114190722432.png" alt="image-20201114190722432"></p>
+<p>应用层的作用是向用户提供一组常用的应用程序，比如电子邮件、文件传输访问、远程登录等。</p>
+<p>传输层提供应用程序间的通信，功能为：格式化信息和提供可靠的传输。为了实现传输的可靠，传输层协议规定接收端必须回复确认，并且如果分组丢失则必须重新发送。</p>
+<p>网络层负责计算机间的通信，包括了三个功能。1.处理传输层的分组发送请求，收到请求后将分组装进IP数据报，填充报头，选择好去往信宿机的路径，然后发往网络接口。2.处理收到的数据报，先检查它是否合法，然后寻找路径。如果数据报到达信宿机就去掉报头，将剩余的部分交给适当的传输协议。如果数据报没到达信宿机，则转发该数据报。3.处理路径，留空，拥塞等问题。</p>
+<p>网络接口层是该协议的最底层，负责接收IP数据报并通过网络发送，或从网络上接受物理帧，抽出IF数据报交给IP层。</p>
+<h2 id="IP"><a href="#IP" class="headerlink" title="IP"></a>IP</h2><p>IP用于计算机间的通信。IP是不需要物理上线路连接的，而且也不会占用正在通信的路线，这样就减少了网络线路的压力，降低了对网络线路的要求，每条线路可以同时满足许多不同计算机之间的通信。通过IP，数据被分为许多小的数据包传输，并将每个包送到它们的目的地。</p>
+<h4 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h4><p>每个计算机都得有一个IP地址，就像每一个房子有一个门牌号，这样你才是互联网的住民，才能进入互联网这个城市去浏览信息并且能够在浏览完信息之后回家休息。而每个IP包必须有一个地址才能发送到另一台计算机。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/14/%E6%80%BB%E7%BB%93/" data-id="ckhja7yqe00044suihy6d6ezv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/07/hello-world/" class="article-date">
+  <time datetime="2020-11-07T12:18:30.040Z" itemprop="datePublished">2020-11-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/07/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/07/hello-world/" data-id="ckhja7yqa00014sui64pkachy" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-taoge" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/07/taoge/" class="article-date">
+  <time datetime="2020-11-07T12:17:59.730Z" itemprop="datePublished">2020-11-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/07/taoge/">TG</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>My first blog was written by Tao.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/07/taoge/" data-id="ckhja7yqg00054sui6ap289ks" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-github&#39;s blog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/10/31/github's%20blog/" class="article-date">
@@ -96,44 +277,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/31/github's%20blog/" data-id="ckgxmtj4o0000b0uifhlo6jrp" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-taoge" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/31/taoge/" class="article-date">
-  <time datetime="2020-10-31T07:27:52.745Z" itemprop="datePublished">2020-10-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/31/taoge/">TG</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>My first blog was written by Tao.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/31/taoge/" data-id="ckgxmtj4z0001b0uidk4mh9ww" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/10/31/github's%20blog/" data-id="ckhja7yqc00024suicbzo9qsn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -161,56 +305,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/31/kunge/" data-id="ckgxmtj5b0003b0ui8z4x1zpq" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/31/hello-world/" class="article-date">
-  <time datetime="2020-10-31T03:47:09.890Z" itemprop="datePublished">2020-10-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/31/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/31/hello-world/" data-id="ckgxmtj510002b0ui5a6hfptk" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/10/31/kunge/" data-id="ckhja7yqd00034suifd71abmp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -238,7 +333,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li></ul>
     </div>
   </div>
 
@@ -251,19 +346,23 @@
       <ul>
         
           <li>
+            <a href="/2020/11/15/HTML%20%E7%AC%AC%E4%B8%80%E6%AC%A1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/14/%E6%80%BB%E7%BB%93/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/07/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/07/taoge/">TG</a>
+          </li>
+        
+          <li>
             <a href="/2020/10/31/github's%20blog/">Problems encountered in installing blog</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/31/taoge/">TG</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/31/kunge/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/31/hello-world/">Hello World</a>
           </li>
         
       </ul>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="TCP&#x2F;IP本次总结就只总结这周学的一些网络协议。 大体的框架从软件到硬件分为七个部分： 应用层，表示层，会话层，传输层，网络层，数据链路层，物理层。 其中传输层负责完成数据的传送，前三层是面向用户，物理层顾名思义，它的任务就是解决多个数据终端之间能够连接在一起，比如中继器和集线器。 数据链路层则是让两个终端结点能够不出错的完成传输数据，为网络层提供服务，使用的设备为网桥。网桥在网络互联中优则会">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2020/11/14/%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="TCP&#x2F;IP本次总结就只总结这周学的一些网络协议。 大体的框架从软件到硬件分为七个部分： 应用层，表示层，会话层，传输层，网络层，数据链路层，物理层。 其中传输层负责完成数据的传送，前三层是面向用户，物理层顾名思义，它的任务就是解决多个数据终端之间能够连接在一起，比如中继器和集线器。 数据链路层则是让两个终端结点能够不出错的完成传输数据，为网络层提供服务，使用的设备为网桥。网桥在网络互联中优则会">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/zhang/AppData/Roaming/Typora/typora-user-images/image-20201114190722432.png">
+<meta property="article:published_time" content="2020-11-14T10:26:20.212Z">
+<meta property="article:modified_time" content="2020-11-14T14:41:51.504Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/zhang/AppData/Roaming/Typora/typora-user-images/image-20201114190722432.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/14/%E6%80%BB%E7%BB%93/" class="article-date">
+  <time datetime="2020-11-14T10:26:20.212Z" itemprop="datePublished">2020-11-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="TCP-IP"><a href="#TCP-IP" class="headerlink" title="TCP/IP"></a>TCP/IP</h2><p>本次总结就只总结这周学的一些网络协议。</p>
+<p>大体的框架从软件到硬件分为七个部分：</p>
+<p>应用层，表示层，会话层，传输层，网络层，数据链路层，物理层。</p>
+<p>其中传输层负责完成数据的传送，前三层是面向用户，物理层顾名思义，它的任务就是解决多个数据终端之间能够连接在一起，比如中继器和集线器。</p>
+<p>数据链路层则是让两个终端结点能够不出错的完成传输数据，为网络层提供服务，使用的设备为网桥。网桥在网络互联中优则会数据接收，地址过滤和数据的转发的作用，实现多个网络系统间数据的交换。</p>
+<p>网络层互连的设备为路由器。让网络层互联是为了解决一些问题（路由选择，拥塞控制，差错处理，分段技术，这些问题还没有完全看懂）。如果网络协议相同，则互连解决的最重要的问题就是路由选择。如果网络协议不同，则需要使用多协议路由器。</p>
+<h2 id="TCP-IP-1"><a href="#TCP-IP-1" class="headerlink" title="TCP/IP"></a>TCP/IP</h2><p>接下来说说比较重要的TCP/IP协议。它的存在就像英语一样，你可以说自己国家的语言，但是到了国际大会上，大家都说英语，你不能听不懂，也不能不会说。它指定一些通用的东西让所有计算机都能看懂，并且交流。TCP/IP是一个协议族的统称，里面包括好多其他协议，计算机有了这些就能学会它们的“英语”，并能和其他计算机交流。</p>
+<p><img src="C:\Users\zhang\AppData\Roaming\Typora\typora-user-images\image-20201114190722432.png" alt="image-20201114190722432"></p>
+<p>应用层的作用是向用户提供一组常用的应用程序，比如电子邮件、文件传输访问、远程登录等。</p>
+<p>传输层提供应用程序间的通信，功能为：格式化信息和提供可靠的传输。为了实现传输的可靠，传输层协议规定接收端必须回复确认，并且如果分组丢失则必须重新发送。</p>
+<p>网络层负责计算机间的通信，包括了三个功能。1.处理传输层的分组发送请求，收到请求后将分组装进IP数据报，填充报头，选择好去往信宿机的路径，然后发往网络接口。2.处理收到的数据报，先检查它是否合法，然后寻找路径。如果数据报到达信宿机就去掉报头，将剩余的部分交给适当的传输协议。如果数据报没到达信宿机，则转发该数据报。3.处理路径，留空，拥塞等问题。</p>
+<p>网络接口层是该协议的最底层，负责接收IP数据报并通过网络发送，或从网络上接受物理帧，抽出IF数据报交给IP层。</p>
+<h2 id="IP"><a href="#IP" class="headerlink" title="IP"></a>IP</h2><p>IP用于计算机间的通信。IP是不需要物理上线路连接的，而且也不会占用正在通信的路线，这样就减少了网络线路的压力，降低了对网络线路的要求，每条线路可以同时满足许多不同计算机之间的通信。通过IP，数据被分为许多小的数据包传输，并将每个包送到它们的目的地。</p>
+<h4 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h4><p>每个计算机都得有一个IP地址，就像每一个房子有一个门牌号，这样你才是互联网的住民，才能进入互联网这个城市去浏览信息并且能够在浏览完信息之后回家休息。而每个IP包必须有一个地址才能发送到另一台计算机。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/14/%E6%80%BB%E7%BB%93/" data-id="ckhja7yqe00044suihy6d6ezv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/11/15/HTML%20%E7%AC%AC%E4%B8%80%E6%AC%A1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/11/07/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/11/15/HTML%20%E7%AC%AC%E4%B8%80%E6%AC%A1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/14/%E6%80%BB%E7%BB%93/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/07/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/07/taoge/">TG</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/31/github's%20blog/">Problems encountered in installing blog</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
