@@ -87,21 +87,25 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="一-HTML标签类别："><a href="#一-HTML标签类别：" class="headerlink" title="一.HTML标签类别："></a>一.HTML标签类别：</h2><p>1.双标签：</p>
-<body>标签开始部分
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;标签开始部分</span><br><span class="line">&lt;&#x2F;body&gt;标签结束部分</span><br><span class="line">&#x2F; 为关闭符号</span><br></pre></td></tr></table></figure>
 
-</body>标签结束部分
-
-<p>/ 为关闭符号</p>
 <p>2.单标签：</p>
 <p>数量很少，仅十几个</p>
-<p>eg: <br />（br为换行的意思）</p>
-<h2 id="二-HTML标签关系："><a href="#二-HTML标签关系：" class="headerlink" title="二.HTML标签关系："></a>二.HTML标签关系：</h2><p>嵌套关系和兄弟关系 </p>
-<html>和</html>为根标签，嵌套在内为上下级父子关系，并列级别为兄弟关系
+<p>eg: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;br&#x2F;&gt;   &lt;hr&#x2F;&gt;</span><br></pre></td></tr></table></figure>
 
+<p>br为换行，hr为水平线（下面的代码将实际操作）</p>
+<h2 id="二-HTML标签关系："><a href="#二-HTML标签关系：" class="headerlink" title="二.HTML标签关系："></a>二.HTML标签关系：</h2><p>嵌套关系和兄弟关系 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">和</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>为根标签，嵌套在内为上下级父子关系，并列级别为兄弟关系</p>
 <p>注：如果两个标签为嵌套关系，子元素最好缩进一个tab的身为，并列关系则上下对齐。</p>
-<p><strong><DOCTYPE html></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br></pre></td></tr></table></figure>
+
 <p>意思为使用的HTML 5版本</p>
-<h2 id="三-字符集："><a href="#三-字符集：" class="headerlink" title="三.字符集："></a>三.字符集：</h2><p>1.<meta charset="UTF-8"></p>
+<h2 id="三-字符集："><a href="#三-字符集：" class="headerlink" title="三.字符集："></a>三.字符集：</h2><p>1.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br></pre></td></tr></table></figure>
+
 <p>为字符集，UTF-8是目前最常用的字符集编码方式，类似的还有GBK和gb2312</p>
 <p>gb2312为简体中文，BIG5为繁体，GBK包含二者，UTF-8包含了全世界的所有字符 </p>
 <p>2.标签属性：</p>
@@ -114,9 +118,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name&#x3D;&quot;viewport&quot;</span><br><span class="line">          content&#x3D;&quot;width&#x3D;device-width, user-scalable&#x3D;no, initial-scale&#x3D;1.0, maximum-scale&#x3D;1.0, minimum-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">    &lt;meta http-equiv&#x3D;&quot;X-UA-Compatible&quot; content&#x3D;&quot;ie&#x3D;edge&quot;&gt;</span><br><span class="line">    &lt;title&gt;Second Try&lt;&#x2F;title&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">START</span><br><span class="line">&lt;hr width&#x3D;&quot;500&quot; color&#x3D;&quot;yellow&quot;&#x2F;&gt;</span><br><span class="line">Second try.</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 
 <p>注：idea快捷施法：！加Tab键。</p>
-<h2 id="四-图片标签："><a href="#四-图片标签：" class="headerlink" title="四.图片标签："></a>四.图片标签：</h2><img/>
+<h2 id="四-图片标签："><a href="#四-图片标签：" class="headerlink" title="四.图片标签："></a>四.图片标签：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;img&gt;</span><br><span class="line">&lt;img&#x2F;&gt;标记属性：</span><br></pre></td></tr></table></figure>
 
-<p><img/>标记属性：</p>
 <p>1.</p>
 <p>src           URL            图像的路径</p>
 <p>图片插入方式：</p>
@@ -131,7 +134,7 @@
 <p>3.</p>
 <p>title          文本             图片存在，当鼠标悬停在图片上，将显示出title中</p>
 <p>​                                      的文本内容</p>
-<img src="xxx.jpg" title="图像时什么我也不知道">
+<img src="xxx.jpg" title="图像是什么我也不知道">
 
 <p>鼠标悬停，显示title中的文本</p>
 <p>4.</p>
@@ -146,13 +149,14 @@
 <p>例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;meta name&#x3D;&quot;viewport&quot;</span><br><span class="line">          content&#x3D;&quot;width&#x3D;device-width, user-scalable&#x3D;no, initial-scale&#x3D;1.0, maximum-scale&#x3D;1.0, minimum-scale&#x3D;1.0&quot;&gt;</span><br><span class="line">    &lt;meta http-equiv&#x3D;&quot;X-UA-Compatible&quot; content&#x3D;&quot;ie&#x3D;edge&quot;&gt;</span><br><span class="line">    &lt;title&gt;Second Try&lt;&#x2F;title&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">START</span><br><span class="line">&lt;hr width&#x3D;&quot;500&quot; color&#x3D;&quot;yellow&quot;&#x2F;&gt;</span><br><span class="line">Second try.&lt;br &#x2F;&gt;</span><br><span class="line">1.src&lt;br &#x2F;&gt;</span><br><span class="line">&lt;img src&#x3D;&quot;Girlfriend.jpg&quot;&#x2F;&gt; &lt;br &#x2F;&gt;</span><br><span class="line">2.alt&lt;br&#x2F;&gt;</span><br><span class="line">&lt;img src&#x3D;&quot;Girlfriend1.jpg&quot; alt&#x3D;&quot;女朋友怎么可能有两个&quot;&#x2F;&gt; &lt;br &#x2F;&gt;</span><br><span class="line">3.title&lt;br&#x2F;&gt;</span><br><span class="line">&lt;img src&#x3D;&quot;Girlfriend.jpg&quot; title&#x3D;&quot;老婆&quot;&#x2F;&gt;</span><br><span class="line">4.width&#x2F;height&lt;br &#x2F;&gt;</span><br><span class="line">&lt;img src&#x3D;&quot;Girlfriend.jpg&quot; title&#x3D;&quot;老婆&quot; width&#x3D;&quot;500&quot;&#x2F;&gt;  &lt;br &#x2F;&gt;</span><br><span class="line">5.border&lt;br &#x2F;&gt;</span><br><span class="line">&lt;img src&#x3D;&quot;Girlfriend.jpg&quot; title&#x3D;&quot;老婆&quot; width&#x3D;&quot;500&quot; border&#x3D;&quot;5&quot;&#x2F;&gt; &lt;br &#x2F;&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 
+<p><a target="_blank" rel="noopener" href="http://localhost:63342/First%20html/MyFirst.html?_ijt=mk1ff9g8lfnlrrvc93h0bkv53v">http://localhost:63342/First%20html/MyFirst.html?_ijt=mk1ff9g8lfnlrrvc93h0bkv53v</a></p>
 <p>注：</p>
 <p>用idea写这类代码，注意把图片放进src的文件夹内（可以通过idea的编译界面找到src文件夹的位置，然后把图片放进去）</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/18/HTML%E7%AC%AC%E4%BA%8C%E6%AC%A1/" data-id="ckhnb9g8i000288uidt8k0p41" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/11/18/HTML%E7%AC%AC%E4%BA%8C%E6%AC%A1/" data-id="ckhnbv30h00018oui6xszfr39" class="article-share-link">Share</a>
       
       
     </footer>
@@ -185,36 +189,23 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong>tips:</strong></p>
-<p><strong> 此处为加粗字体  </strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;strong&gt;此处为加粗字体&lt;&#x2F;strong&gt;</span><br></pre></td></tr></table></figure>
+
 <h3 id="1-Web标准构成："><a href="#1-Web标准构成：" class="headerlink" title="1.  Web标准构成："></a>1.  Web标准构成：</h3><p>​      结构（HTML），表现（CSS），行为（JS）</p>
 <h3 id="2-HTML：超文本标签语言"><a href="#2-HTML：超文本标签语言" class="headerlink" title="2.HTML：超文本标签语言"></a>2.HTML：超文本标签语言</h3><p>HTML语法结构：</p>
-<html>    //根标签
-
-<pre><code>       &lt;head&gt;  //头标签
-           &lt;title&gt;此处为网页名称&lt;/title&gt;  //标题标签，让页面有自己的标题
-       &lt;/head&gt;</code></pre>
-<p>​                <body> </p>
-<p>​                                   //主体标签，网页的主体部分，用于存放<html>                  代码</p>
-<p>​                </body></p>
-</html>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;    &#x2F;&#x2F;根标签</span><br><span class="line">    &lt;head&gt;  &#x2F;&#x2F;头标签</span><br><span class="line">        &lt;title&gt;此处为网页名称&lt;&#x2F;title&gt;  &#x2F;&#x2F;标题标签，让页面有自己的标题</span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    &#x2F;&#x2F;主体标签，网页的主体部分，用于存放&lt;html&gt;代码</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 
 <p>带&lt;&gt;的，叫做标签。</p>
-<p>实际操作：</p>
-<html>
+<p> 实际操作：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;title&gt;我的第一个网站&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    This is my frist try to HTML.</span><br><span class="line">    我的第一次HTML尝试。</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 
-<pre><code>     &lt;head&gt;
-                 &lt;title&gt;我的第一个网站&lt;/title&gt;
-     &lt;/head&gt;</code></pre>
-<p>​         <body><br>​                   This is my frist try to HTML.<br>​                   我的第一次HTML尝试。<br>​         </body></p>
-</html>
-
-<p>将此代码复制到文本文档中，并将后缀改成html文件，选择打开方式为Google，打开后会有小惊喜。</p>
-<p>（至于换行，我还没有学习到，待我进一步研究）</p>
+<p><a target="_blank" rel="noopener" href="http://localhost:63342/First%20html/MyFirst.html?_ijt=mk1ff9g8lfnlrrvc93h0bkv53v">http://localhost:63342/First%20html/MyFirst.html?_ijt=mk1ff9g8lfnlrrvc93h0bkv53v</a></p>
+<p>（乱码和换行问题将在下一次总结中提到）</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/15/HTML%20%E7%AC%AC%E4%B8%80%E6%AC%A1/" data-id="ckhnb9g8a000088uiemty5dsd" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/11/15/HTML%20%E7%AC%AC%E4%B8%80%E6%AC%A1/" data-id="ckhnbv30c00008ouigwms2k6f" class="article-share-link">Share</a>
       
       
     </footer>
@@ -263,7 +254,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/07/hello-world/" data-id="ckhnb9g8g000188uihjwm8pee" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/11/07/hello-world/" data-id="ckhnbv30j00028ouibcor73qn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -305,7 +296,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/31/github's%20blog/" data-id="ckhnb9g8o000388ui0ybh1cne" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/10/31/github's%20blog/" data-id="ckhnbv30p00038ouigqvg74on" class="article-share-link">Share</a>
       
       
     </footer>
