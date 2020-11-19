@@ -64,6 +64,113 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-HTML第四次" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/19/HTML%E7%AC%AC%E5%9B%9B%E6%AC%A1/" class="article-date">
+  <time datetime="2020-11-19T12:57:44.975Z" itemprop="datePublished">2020-11-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/19/HTML%E7%AC%AC%E5%9B%9B%E6%AC%A1/">HTML的第四次总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="锚点定位："><a href="#锚点定位：" class="headerlink" title="锚点定位："></a>锚点定位：</h2><p>将一段文字设置成锚点，变成点击此文本可自动跳转到该页面下面相应的内容处，类似于目录的作用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;#锚点内容&quot;&gt;被设置内容&lt;&#x2F;a&gt;</span><br><span class="line">&lt;a id&#x3D;&quot;锚点内容&quot;&gt;文本&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
+
+<p>其中，第一行代码中“#锚点内容”可以理解为黑洞，而id则可以理解为白洞，你的鼠标点击黑洞，就被吸了进去，出来的地方就是白洞口，见到的就是白洞外。</p>
+<p>当黑洞变成标题时，例如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h2&gt;&lt;a href&#x3D;&quot;#锚点内容&quot;&gt;被设置内容&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如果你想让白洞口也是标题的大小，就写成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h2 id&#x3D;&quot;锚点内容&quot;&gt;文本&lt;&#x2F;h2&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如果不想变成标题大小，就写成原样子</p>
+<p>注：黑洞和白洞起的名字可以不一样，但是你实际用href和id设置成为了二者空间上相连的样子，他就会自动帮你跳转进去</p>
+<p>这里用LOL举了一个例子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;Title&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    &lt;h2 id&#x3D;&quot;back&quot;&gt;目录&lt;&#x2F;h2&gt;</span><br><span class="line">    &lt;hr width&#x3D;&quot;600&quot; color&#x3D;&quot;blue&quot; &#x2F;&gt;</span><br><span class="line">    &lt;h3&gt;&lt;a href&#x3D;&quot;#background&quot;&gt;1 背景设定&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;h3&gt;&lt;a href&#x3D;&quot;#character&quot;&gt;2 角色设定&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;h4&gt;&lt;a href&#x3D;&quot;#hero&quot;&gt;英雄列表&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;</span><br><span class="line">    &lt;h4&gt;&lt;a href&#x3D;&quot;#stronger&quot;&gt;英雄强化&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;</span><br><span class="line">    &lt;h5&gt;&lt;a href&#x3D;&quot;#rune&quot;&gt;符文系统&lt;&#x2F;a&gt;&lt;&#x2F;h5&gt;</span><br><span class="line">    &lt;h5&gt;&lt;a href&#x3D;&quot;#player&quot;&gt;召唤师技能&lt;&#x2F;a&gt;&lt;&#x2F;h5&gt;</span><br><span class="line">    &lt;h4&gt;&lt;a href&#x3D;&quot;#achievement&quot;&gt;英雄成就&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;</span><br><span class="line">    &lt;h4&gt;&lt;a href&#x3D;&quot;#star&quot;&gt;永恒星碑&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;</span><br><span class="line">    &lt;h4&gt;&lt;a href&#x3D;&quot;#monster&quot;&gt;野区野怪&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;</span><br><span class="line">    &lt;hr width&#x3D;&quot;600&quot; color&#x3D;&quot;blue&quot; &#x2F;&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;h3 id&#x3D;&quot;background&quot;&gt;背景设定&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;h6&gt;&lt;a href&#x3D;&quot;#back&quot;&gt;返回顶部&lt;&#x2F;a&gt;&lt;&#x2F;h6&gt;</span><br><span class="line">    &lt;p&gt;在符文之地，魔法就是一切。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;在这里，魔法不只是一种神秘莫测的能量概念。它是实体化的物质，可以被引导、成形、塑造和操作。符文之地的魔法拥有自己的自然法则。源生态魔法随机变化的结果改变了科学法则。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;符文之地有数块大陆，不过所有的生命都集中在最大魔法大陆——瓦洛兰。瓦洛兰大陆居于符文之地中心，是符文之地面积最大的大陆。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;被祝福的符文之地上有大量源生态魔法能量，而此地居民可以触及其中的能量。符文之地的中心区域集中了数量巨大的源生态魔法能量，这些地方都是水晶枢纽的理想位置。水晶枢纽可以将源生能量塑形为自身实体化的存在。此外，水晶枢纽还可以成为能量车间，为需要魔法能量的建筑供能。水晶枢纽遍布符文之地，但最大的水晶枢纽都坐落在瓦洛兰大陆。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;h3 id&#x3D;&quot;character&quot;&gt;角色设定&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;h6&gt;&lt;a href&#x3D;&quot;#back&quot;&gt;返回顶部&lt;&#x2F;a&gt;&lt;&#x2F;h6&gt;</span><br><span class="line">    &lt;h4 id&#x3D;&quot;hero&quot;&gt;英雄列表&lt;&#x2F;h4&gt;</span><br><span class="line">    &lt;h6&gt;&lt;a href&#x3D;&quot;#back&quot;&gt;返回顶部&lt;&#x2F;a&gt;&lt;&#x2F;h6&gt;</span><br><span class="line">    &lt;p&gt;名字和称号均用国服英雄列表，更新次序按美服正式服加入时间的顺序排列。共计143名英雄，累计发布时间超过十年，这些英雄们象征着永不言败，陪伴了召唤师们度过了一个个快乐、热血、激动、永不放弃的一场场比赛。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;h4 id&#x3D;&quot;stronger&quot;&gt;英雄强化&lt;&#x2F;h4&gt;</span><br><span class="line">    &lt;h6&gt;&lt;a href&#x3D;&quot;#back&quot;&gt;返回顶部&lt;&#x2F;a&gt;&lt;&#x2F;h6&gt;</span><br><span class="line">    &lt;h5 id&#x3D;&quot;rune&quot;&gt;符文系统&lt;&#x2F;h5&gt;</span><br><span class="line">    &lt;h6&gt;&lt;a href&#x3D;&quot;#back&quot;&gt;返回顶部&lt;&#x2F;a&gt;&lt;&#x2F;h6&gt;</span><br><span class="line">    &lt;p&gt;玩家可以在英雄选择时根据自己的玩法调整及自定义符文，共计60枚符文全部免费。每个符文系中都有一个最强大的符文 - 基石，可以根据自己操作英雄的类型和追求进行调整。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;h5 id&#x3D;&quot;player&quot;&gt;召唤师技能&lt;&#x2F;h5&gt;</span><br><span class="line">    &lt;h6&gt;&lt;a href&#x3D;&quot;#back&quot;&gt;返回顶部&lt;&#x2F;a&gt;&lt;&#x2F;h6&gt;</span><br><span class="line">    &lt;p&gt;召唤师技能是英雄联盟的一大特色，每个玩家将有两个独立安放召唤师技能的技能栏，召唤师技能独立计算CD，不需要任何消耗手段。但却是游戏中极为重要的一部分，不同的召唤师技能作用截然不同，你可以根据自己或队伍的战术战略需求随意配置自己的召唤师技能。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;召唤师技能随着召唤师的等级逐渐解锁，必须记住的是，你只能携带两个不同的召唤师技能，而且一进游戏就不能更改，只能等到下一盘游戏前才能更改。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;h4 id&#x3D;&quot;achievement&quot;&gt;英雄成就&lt;&#x2F;h4&gt;</span><br><span class="line">    &lt;h6&gt;&lt;a href&#x3D;&quot;#back&quot;&gt;返回顶部&lt;&#x2F;a&gt;&lt;&#x2F;h6&gt;</span><br><span class="line">    &lt;p&gt;玩家每完成一场对局后，都会为所用的英雄获得基于队伍表现和个人贡献的成就点数。在获取足够的成就点数后，该英雄的成就等级（阶位）就会提升，并获得奖励。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;&lt;strong&gt;资格：&lt;&#x2F;strong&gt;5级以上的所有召唤师都有资格获取英雄成就点数，仅支持召唤师峡谷的匹配对局。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;&lt;strong&gt;评分：&lt;&#x2F;strong&gt;鼠标悬停在结算界面的英雄成就的点数槽上，可以看到本局游戏该英雄的评分。评分会提供奖励，奖励的多少取决于对局中的总体表现，包括角色定位，所用的英雄，以及至关重要的分路。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;&lt;strong&gt;点数：&lt;&#x2F;strong&gt;点击客户端的召唤师档案，会看到展示总成就得分的全新数据统计，这个数据是所有英雄成就等级的总和。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;&lt;strong&gt;升级：&lt;&#x2F;strong&gt;每个已解锁的英雄成就的前五个等级可以通过获取成就点数自动升级，当英雄成就达到5级后，需要在战利品库中通过合成操作依次解锁6-7级。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;&lt;strong&gt;头衔：&lt;&#x2F;strong&gt;每个阶位都有一个基于角色定位的头衔，玩家可以在档案中看到这些头衔。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;  刺客          战士          法师          射手          辅助          坦克&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;见习刺客       见习战士       见习法师       见习射手       见习辅助       见习坦克&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;初级刺客       初级战士       初级法师       初级射手       初级辅助       初级坦克&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;中级刺客       中级战士       中级法师       中级射手       中级辅助       中级坦克&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;高级刺客       高级战士       高级法师       高级射手       高级辅助       高级坦克&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;杀戮之影       征服之刃       织法之杖       鹰隼之眼       庇护之光       无畏之盾&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;杀戮宗师       征服宗师       织法宗师       射击宗师       庇护宗师       无畏宗师&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;  死神          战神          法神          狙神         守护之神         巨神&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;h4 a id&#x3D;&quot;star&quot;&gt;永恒星碑&lt;&#x2F;h4&gt;</span><br><span class="line">    &lt;h6&gt;&lt;a href&#x3D;&quot;#back&quot;&gt;返回顶部&lt;&#x2F;a&gt;&lt;&#x2F;h6&gt;</span><br><span class="line">    &lt;p&gt;永恒星碑系统是一个全新的英雄成就相关系统，可以展示自己在英雄联盟当中的成就，追踪每个英雄独有和通用的游戏里程碑。永恒星碑进度可以在藏品标签页的英雄处进行查看。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;&lt;strong&gt;上线时间：&lt;&#x2F;strong&gt;永恒星碑系统于9.18版本在测试服上线，2020年6月2日（10.11版本）在简体中文服逐步上线。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;&lt;strong&gt;获得方式：&lt;&#x2F;strong&gt;玩家可以在英雄详情页面直接购买永恒星碑套件(在全新的成长页面)，也可以在游戏商城中的永恒星碑标签页通过点券购买。每个套件包含三个永恒星碑。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;&lt;strong&gt;永恒星碑引擎：&lt;&#x2F;strong&gt;永恒星碑引擎是只需玩游戏就能免费获得的战利品奖励。在事件期间完成任务，赢取全新的四级赛段奖励或是被授予胜利系列皮肤荣耀的玩家都能获得永恒星碑引擎，里面有只能通过点券购买的永恒星碑碎片。&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;h4 id&#x3D;&quot;monster&quot;&gt;野区野怪&lt;&#x2F;h4&gt;</span><br><span class="line">    &lt;h6&gt;&lt;a href&#x3D;&quot;#back&quot;&gt;返回顶部&lt;&#x2F;a&gt;&lt;&#x2F;h6&gt;</span><br><span class="line">    &lt;p&gt;野怪名称:&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;普通野怪：石甲虫、远古石甲虫 暗影狼 大型暗影狼 锋喙鸟 深红锋喙鸟 魔沼蛙 峡谷迅捷蟹&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;红蓝BUFF:苍蓝雕纹魔像 绯红印记树怪&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;史诗野怪:峡谷先锋 元素巨龙 元素亚龙（炼狱亚龙 山脉亚龙 海洋亚龙 云端亚龙） 远古巨龙&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;p&gt;最强野怪:纳什男爵&lt;&#x2F;p&gt;</span><br><span class="line">    &lt;br&#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>（空格显示不全的问题待我下次解决）</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/19/HTML%E7%AC%AC%E5%9B%9B%E6%AC%A1/" data-id="ckhouxgrj0003pguihjrp7r97" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-HTML第三次" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/18/HTML%E7%AC%AC%E4%B8%89%E6%AC%A1/" class="article-date">
+  <time datetime="2020-11-18T11:56:13.959Z" itemprop="datePublished">2020-11-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/18/HTML%E7%AC%AC%E4%B8%89%E6%AC%A1/">HTML的第三次总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>一.链接标签：</strong></p>
+<p>单词缩写：anchor</p>
+<p>在HTML文件内添加链接方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;目标网站&quot; target&#x3D;&quot;目标窗口的弹出方式&quot;&gt;文本或图像&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
+
+<p>href：用于指定链接目标的url地址，当标签内有了href属性时，他就有了超链接功能。</p>
+<p>target：用于指定链接页面的打开方式，默认为_self和 _blank两种。意思为，当打开链接的时候，是否保留原网页并打开新的网页显示链接网址。 _self为不保留， _blank为保留。</p>
+<p>例：添加外部链接</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;Document&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    &lt;h3&gt;友情链接&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.baidu.com&quot;&gt;百度&lt;&#x2F;a&gt;</span><br><span class="line">    &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.sina.com.cn&quot;&gt;新浪&lt;&#x2F;a&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">注：&lt;h1&gt; - &lt;h6&gt; 标签可定义标题。&lt;h1&gt; 定义最大的标题。&lt;h6&gt; 定义最小的标题。&lt;h1&gt;最大标题字体&lt;&#x2F;h1&gt;，&lt;h6&gt;最小标题字体&lt;&#x2F;h6&gt;</span><br></pre></td></tr></table></figure>
+
+<p>同时也可以添加内部链接</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;Document&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    &lt;h3&gt;友情链接&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;a href&#x3D;&quot;内部链接地址&quot;&gt;百度&lt;&#x2F;a&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>当链接地址未确定，但页面标题存在时</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;Document&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    &lt;h3&gt;友情链接&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;a href&#x3D;&quot;#&quot;&gt;我的博客&lt;&#x2F;a&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>target使用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">        &lt;title&gt;Document&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;&#x2F;head&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">    &lt;h3&gt;友情链接&lt;&#x2F;h3&gt;</span><br><span class="line">    &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.baidu.com&quot; target&#x3D;&quot;_blank&quot;&gt;百度&lt;&#x2F;a&gt;</span><br><span class="line">    &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/11/18/HTML%E7%AC%AC%E4%B8%89%E6%AC%A1/" data-id="ckhouxgrg0001pgui4nakh9ny" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-HTML第二次" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/11/18/HTML%E7%AC%AC%E4%BA%8C%E6%AC%A1/" class="article-date">
@@ -156,7 +263,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/18/HTML%E7%AC%AC%E4%BA%8C%E6%AC%A1/" data-id="ckhnbv30h00018oui6xszfr39" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/11/18/HTML%E7%AC%AC%E4%BA%8C%E6%AC%A1/" data-id="ckhouxgri0002pguic48n86yp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -205,7 +312,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/15/HTML%20%E7%AC%AC%E4%B8%80%E6%AC%A1/" data-id="ckhnbv30c00008ouigwms2k6f" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/11/15/HTML%20%E7%AC%AC%E4%B8%80%E6%AC%A1/" data-id="ckhouxgra0000pgui0wqp0jq8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -254,7 +361,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/07/hello-world/" data-id="ckhnbv30j00028ouibcor73qn" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/11/07/hello-world/" data-id="ckhouxgrq0005pgui3m8f8qax" class="article-share-link">Share</a>
       
       
     </footer>
@@ -296,7 +403,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/31/github's%20blog/" data-id="ckhnbv30p00038ouigqvg74on" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/10/31/github's%20blog/" data-id="ckhouxgrk0004pguicnn1avun" class="article-share-link">Share</a>
       
       
     </footer>
@@ -337,6 +444,14 @@
       <ul>
         
           <li>
+            <a href="/2020/11/19/HTML%E7%AC%AC%E5%9B%9B%E6%AC%A1/">HTML的第四次总结</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/18/HTML%E7%AC%AC%E4%B8%89%E6%AC%A1/">HTML的第三次总结</a>
+          </li>
+        
+          <li>
             <a href="/2020/11/18/HTML%E7%AC%AC%E4%BA%8C%E6%AC%A1/">HTML的第二次总结</a>
           </li>
         
@@ -346,10 +461,6 @@
         
           <li>
             <a href="/2020/11/07/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2020/10/31/github's%20blog/">Problems encountered in installing blog</a>
           </li>
         
       </ul>
